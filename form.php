@@ -14,26 +14,31 @@
   
   <p>
   <label for="name">Name</label>
-  <input type="text" id="name" name="name">
+  <input type="text" id="name" name="name" required>
+  <span class="error">* <?php echo $nameErro;?></span>
   </p>
   
   <p>
   <label for="lastname">Lastname</label>
-  <input type="text" id="lastname" name="lastname">
+  <input type="text" id="lastname" name="lastname" required>
+  <span class="error">* <?php echo $lastnameErr;?></span>
   </p>
   
   <p>
   <label for="email">Email</label>
-  <input type="email" id="email" name="email">
+  <input type="email" id="email" name="email" required>
+  <span class="error">* <?php echo $emailErr;?></span>
   </p>
 
   <p>
-  <label for="tel">Nméro téléphone</label>
-  <input type="tel" id="tel" name="tel">
+  <label for="tel">Numéro téléphone</label>
+  <input type="tel" id="tel" name="tel" required>
+  <span class="error">* <?php echo $telErr;?></span>
   </p>
   
   <p>
-  <select name="sujet" id="sujet" placeholder = "sujet">
+  <select name="sujet" id="sujet" placeholder = "sujet" required>
+  <span class="error">* <?php echo $sujetErr;?></span>
    
     <option>Sujet</option>
     <option>Rendez vous</option>
@@ -44,7 +49,8 @@
   
   <p>
   <label for="message">Message</label>
-  <textarea id="message" name="message">
+  <textarea id="message" name="message" required>
+  <span class="error">* <?php echo $messageErr;?></span>
   </textarea>
   </p>
   
